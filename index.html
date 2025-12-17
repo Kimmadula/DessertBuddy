@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DessertBuddy - Your Sweet AI Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
-        chatflowid: "910748b5-b803-4b19-b609-29dc094e12e2",
-        apiHost: "http://localhost:3000",
-        theme: {
-          button: {
+      chatflowid: "910748b5-b803-4b19-b609-29dc094e12e2",
+      apiHost: "https://mtwyfzma.usw.sealos.io",
+      theme: {
+        button: {
+          backgroundColor: '#f59e0b',
+        },
+        chatWindow: {
+          userMessage: {
             backgroundColor: '#f59e0b',
           },
-          chatWindow: {
-            userMessage: {
-            backgroundColor: '#f59e0b',
-            },
-            textInput: {
-              sendButtonColor: "#f59e0b",
-            },
+          textInput: {
+            sendButtonColor: "#f59e0b",
           },
-        }
+        },
+      }
     })
   </script>
 
@@ -42,8 +44,9 @@
     <div id="chat-container">
       <div class="welcome-message">
         <h2>Welcome to DessertBuddy! 🍨</h2>
-        <p>Your personal AI assistant for all things sweet. Get recipes, baking tips, dessert recommendations, and more!</p>
-        
+        <p>Your personal AI assistant for all things sweet. Get recipes, baking tips, dessert recommendations, and more!
+        </p>
+
         <div class="feature-cards">
           <div class="feature-card">
             <div class="dessert-image">🍰</div>
@@ -98,4 +101,5 @@
   </footer>
 
 </body>
+
 </html>
