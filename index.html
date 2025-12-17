@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DessertBuddy - Your Sweet AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "910748b5-b803-4b19-b609-29dc094e12e2",
+        apiHost: "http://localhost:3000",
+        theme: {
+          button: {
+            backgroundColor: '#f59e0b',
+          },
+          chatWindow: {
+            userMessage: {
+            backgroundColor: '#f59e0b',
+            },
+            textInput: {
+              sendButtonColor: "#f59e0b",
+            },
+          },
+        }
+    })
+  </script>
+
+  <header>
+    <div class="header-content">
+      <div class="logo">🍰</div>
+      <div>
+        <h1>DessertBuddy</h1>
+        <p class="tagline">Your AI-Powered Sweet Companion</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="chat-container">
+      <div class="welcome-message">
+        <h2>Welcome to DessertBuddy! 🍨</h2>
+        <p>Your personal AI assistant for all things sweet. Get recipes, baking tips, dessert recommendations, and more!</p>
+        
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="dessert-image">🍰</div>
+            <div class="feature-card-content">
+              <h3>Chocolate Cake</h3>
+              <p>Rich and moist chocolate cake perfect for any occasion</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="dessert-image">🍪</div>
+            <div class="feature-card-content">
+              <h3>Chocolate Chip Cookies</h3>
+              <p>Classic cookies with gooey chocolate chips</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="dessert-image">🧁</div>
+            <div class="feature-card-content">
+              <h3>Vanilla Cupcakes</h3>
+              <p>Light and fluffy cupcakes ready for frosting</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="dessert-image">🍰</div>
+            <div class="feature-card-content">
+              <h3>Cheesecake</h3>
+              <p>Creamy, smooth cheesecake with graham crust</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="dessert-image">🥧</div>
+            <div class="feature-card-content">
+              <h3>Apple Pie</h3>
+              <p>Classic apple pie with cinnamon and spices</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="dessert-image">🍦</div>
+            <div class="feature-card-content">
+              <h3>Vanilla Ice Cream</h3>
+              <p>No-churn creamy vanilla ice cream</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Flowise chatbot will render here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>Powered by Flowise | By Kim Dwight Madula</p>
+  </footer>
+
+</body>
+</html>
